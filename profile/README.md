@@ -1,21 +1,13 @@
 Fiat payment processor with many local fiat payment methods with the merchant always receiving bitcoin.
 
-## Status
-I'm working on the Peach API integration, but I'm stack waiting that a new endpoint is added to publish a buy offer for a fixed amount.  
-Fiat integration with Robosat. To be considered if feasible  
-Fiat integration with Mostro. To be considered if feasible  
-Fiat integration with hodl Hodl. Can't be implemented since it requires the account creation manually the last time that I checked  
-Of the 3 planned services (invoicing, ecommerce, booking) I'm still working on booking as the first one because it is probably the most time consuming to implement.  
-
 ## Features
 - Self custodial solution with btcpay server integration.  
 - Supports on-chain and Lighning Network payments.
 - Supports USDt on TRON
 - Supports fiat with the merchant always receiving bitcoins.  
-- Invoicing: single user stand-alone service
-- Ecommerce: single user stand-alone service
-- Booking: single user stand-alone service
-- Cloud: multiple users cloud app with all the previous services included.
+- Invoicing for single user
+- Ecommerce for single user
+- Booking for single user
 
 ## Target
 - Bitcoin enthusiasts: you believe in Bitcoin sound money but at the same time you know that Bitcoin is not widely used as you wish. This tool allows you to reach the traditional market without touching fiat money.  
@@ -33,6 +25,13 @@ Of the 3 planned services (invoicing, ecommerce, booking) I'm still working on b
 - Fiat: All the currencies and local payment methods supported by [Peach Bitcoin](https://peachbitcoin.com) as listed [here](https://api.peachbitcoin.com/v1/info). Tens of local payment methods in Europe, LATAM, Africa with more to come, US excluded. Other p2p platforms integration will be evaluated.
 -   - The fee is set by the merchant and paid by the buyer. To find a match it should be between 5 and 10%.
     - 1000 CHF (or equivalent in other currency) amount limit for each payment.
+ 
+## Status
+Local payment methods integration with Peach Bitcoin. Btcpay server plugin under active development
+Local payment methods integration with Robosat almost ready but required a bond from the buyer.
+Local payment methods integration with Mostro. To be considered if feasible  
+Credit and debit cards integration being evaluated with centralized kyc-free providers.
+Of the 3 planned services (invoicing, ecommerce, booking) I'm still working on booking as the first one because it is probably the most time consuming to implement.  
       
 ## Main repos
 
