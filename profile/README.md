@@ -79,8 +79,7 @@ It is designed for censorship-resistant, high-risk and cross-border use cases.
 ## [p2pay-market](https://github.com/p2payto/p2pay-market)
 Multi-rail Bitcoin P2P offer comparator and spread index.
 
-Live deployment:  
-https://market.p2pay.to
+Live deployment: https://market.p2pay.to
 
 ![language](https://img.shields.io/github/languages/top/p2payto/p2pay-market)
 ![Stars](https://img.shields.io/github/stars/p2payto/p2pay-market?style=social)
@@ -91,8 +90,7 @@ https://market.p2pay.to
 ## [p2pay-booking](https://github.com/p2payto/p2pay-booking)
 Multi-rail booking system with final settlement in bitcoin.
 
-Live deployment:  
-https://booking.p2pay.to
+Live deployment: https://booking.p2pay.to
 
 ![language](https://img.shields.io/github/languages/top/p2payto/p2pay-booking)
 ![Stars](https://img.shields.io/github/stars/p2payto/p2pay-booking?style=social)
