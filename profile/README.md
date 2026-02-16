@@ -90,7 +90,7 @@ Live deployment: https://market.p2pay.to
 ## [booking-template](https://github.com/p2payto/booking-template)
 Multi-rail booking system with final settlement in bitcoin.
 
-Live deployment: https://booking.p2pay.to
+Live deployment: https://booking-template.p2pay.to
 
 ![language](https://img.shields.io/github/languages/top/p2payto/booking-template)
 ![Stars](https://img.shields.io/github/stars/p2payto/booking-template?style=social)
