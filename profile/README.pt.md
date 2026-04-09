@@ -83,5 +83,6 @@ Os repositórios devem ser lidos como trabalho ativo de infraestrutura, não com
 
 ## Comunidade
 
-- [GitHub Discussions](https://github.com/orgs/P2Payments/discussions)
-- [Telegram](https://t.me/P2PaymentsCom)
+- [Discussões do GitHub](https://github.com/orgs/P2Payments/discussions)
+- [Grupo no Telegram](https://t.me/P2PaymentsCom)
+  
