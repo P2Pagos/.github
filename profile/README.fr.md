@@ -83,5 +83,5 @@ Les dépôts doivent être lus comme un travail actif d’infrastructure, et non
 
 ## Communauté
 
-- [GitHub Discussions](https://github.com/orgs/P2Payments/discussions)
-- [Telegram](https://t.me/P2PaymentsCom)
+- [Discussions GitHub](https://github.com/orgs/P2Payments/discussions)
+- [Groupe Telegram](https://t.me/P2PaymentsCom)
