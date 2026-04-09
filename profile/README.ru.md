@@ -83,5 +83,6 @@ P2Payments всё ещё развивается. Некоторые компон
 
 ## Сообщество
 
-- [GitHub Discussions](https://github.com/orgs/P2Payments/discussions)
-- [Telegram](https://t.me/P2PaymentsCom)
+- [Обсуждения GitHub](https://github.com/orgs/P2Payments/discussions)
+- [Группа в Telegram](https://t.me/P2PaymentsCom)
+  
