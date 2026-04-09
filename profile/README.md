@@ -23,29 +23,34 @@ If a rail does not already settle into an asset supported by the Aqua wallet for
 
 ## Rail Integrations
 
-| Rail | Status |
+| Rail | Status | Currency | Payment Methods | Verification |  
 |------|--------|
-| BTC on-chain | Implemented |
-| Lightning | Implemented |
-| USDT onnLiquid Network | Implemented |
-| Peach | Implemented |
-| RoboSats| Implemented |
+| BTC | Implemented | SATS | On-chain & Lightning | None | 
+| USDT | Implemented | USD | Liquid & Polygon | None | 
+| Peach | ongoing | any | any | None | 
+| RoboSats | ongoing | any | any | None |
+| Guardarian | planned | USD, EUR, GBP, CAD, AUD, JPY, | credit/debit cards & Google?Apple pay | Enhanced |
+| Kamipay | planned | BRL | Pix | Standard | 
+| MtPelerin | planned | EUR & CHF | SEPA | Enhanced |
+| Bitzed | planned | ZMW | Mobile | None |
+| Matbea | planned | RUB | | Yandex Pay, Sberbank, Tinkoff, YooMoney, SBP P2P, Mobile phone | None | 
+
 
 ---
 
 ## Active and Planned Repositories
 
-### [mono](https://github.com/p2payto/mono)
-Main orchestrator repository. It assembles rails, flows, and supporting services in one workspace. Active development is currently centered here.
+### [mono](https://github.com/P2Payments/mono)
+Main orchestrator MIT repository. It assembles rails, flows, and supporting services in one workspace. Active development is currently centered here.
 
-### [wallet](https://github.com/p2payto/wallet)
-Mobile wallet based on Aqua. Used for signing and self-custodial settlement flows within the broader P2Payments architecture.
+### [wallet](https://github.com/P2Payments/wallet)
+A MIT fork of the Aqua Flutter Wallet for P2Payments, with an embedded Nuxt app to manage /mono settings and connect to BTCPay via the Shamrock protocol.
 
-### [app](https://github.com/p2payto/app)
-Nuxt-based wallet mini app. Intended to extend payment flows through an embedded interface.
+### [app]
+Nuxt-based MIT app, intended to handle payment flows through an embedded interface in the /wallet Flutter app.
 
 ### marketplace
-Closed-source repository for multi-user marketplace integrations.
+Closed-source repository for multi-user marketplace integrations of the /mono repo.
 
 ---
 
