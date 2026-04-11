@@ -15,7 +15,7 @@ P2Pagos est conçue autour de quelques choix pratiques :
 - **Agnostique en pratique** — le rail utilisable et les règlements offrant le meilleur chemin de conversion comptent davantage que l’idéologie
 - **Multi-rail** — différents marchés nécessitent différentes façons de payer
 - **Modulaire** — les rails et les flux peuvent être activés ou laissés de côté selon le cas d’usage
-- **Open source** — les composants publics restent sous licence MIT
+- **Open source** — les composants publics restent sous licence MIT, avec la maintenance et le développement à long terme soutenus par les revenus de l’offre payante à code source fermé
 
 Si un rail ne règle pas déjà dans un actif pris en charge par le fork d’Aqua Wallet, P2Pagos vise à convertir davantage vers l’actif pris en charge le moins coûteux et le plus fonctionnel pour ce cas.
 
