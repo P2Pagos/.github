@@ -1,8 +1,8 @@
-# P2Payments
+# P2Pagos
 
 Infraestrutura de pagamentos modular e open-source, construída em torno da liquidação em Bitcoin e stablecoins, projetada para permitir fluxos de integração e pagamento mais fluidos entre mercados e rails. Utiliza [BTCPay Server](https://github.com/btcpayserver/btcpayserver) como backend, um fork de [Aqua Wallet](https://github.com/AquaWallet/aqua-wallet) para liquidação self-custodial, e é desenvolvida principalmente com [Nuxt](https://github.com/nuxt/nuxt) e [Nitro](https://github.com/nitrojs/nitro).
 
-A P2Payments combina múltiplos rails de entrada — fiat local, cartões, P2P e cripto — com liquidação on-chain em Bitcoin, USDT na Polygon ou outras stablecoins na Liquid.
+A P2Pagos combina múltiplos rails de entrada — fiat local, cartões, P2P e cripto — com liquidação on-chain em Bitcoin, USDT na Polygon ou outras stablecoins na Liquid.
 
 Ela foi projetada para usuários e empresas que precisam de acesso mais simples a fluxos de pagamento self-custodial e cross-border, inclusive em mercados onde o acesso tradicional a pagamentos é limitado.
 
@@ -10,14 +10,14 @@ Ela foi projetada para usuários e empresas que precisam de acesso mais simples 
 
 ## Abordagem
 
-A P2Payments foi projetada em torno de algumas escolhas práticas:
+A P2Pagos foi projetada em torno de algumas escolhas práticas:
 - **Self-custodial por padrão**
 - **Agnóstica na prática** — o rail utilizável e as liquidações para o melhor caminho de conversão importam mais do que a ideologia
 - **Multi-rail** — mercados diferentes precisam de formas diferentes de pagamento
 - **Modular** — rails e fluxos podem ser habilitados ou deixados de fora dependendo do caso de uso
 - **Open source** — os componentes públicos permanecem sob licença MIT
 
-Se um rail ainda não liquidar em um ativo suportado pelo fork da Aqua Wallet, a P2Payments busca converter adicionalmente para o ativo suportado que seja mais barato e mais funcional para aquele caso.
+Se um rail ainda não liquidar em um ativo suportado pelo fork da Aqua Wallet, a P2Pagos busca converter adicionalmente para o ativo suportado que seja mais barato e mais funcional para aquele caso.
 
 ---
 
@@ -42,11 +42,11 @@ Se um rail ainda não liquidar em um ativo suportado pelo fork da Aqua Wallet, a
 
 ## Repositórios ativos e planejados
 
-### [mono](https://github.com/P2Payments/mono)
+### [mono](https://github.com/P2Pagos/mono)
 Repositório MIT de orquestrador para usuário único. Ele reúne rails, fluxos e serviços de apoio em um único workspace. O desenvolvimento ativo está atualmente concentrado aqui.
 
-### [wallet](https://github.com/P2Payments/wallet)
-Um fork MIT da Aqua Flutter Wallet para P2Payments, com um app Nuxt embutido para gerenciar as configurações do /mono e conectar-se ao BTCPay via protocolo Shamrock.
+### [wallet](https://github.com/P2Pagos/wallet)
+Um fork MIT da Aqua Flutter Wallet para P2Pagos, com um app Nuxt embutido para gerenciar as configurações do /mono e conectar-se ao BTCPay via protocolo Shamrock.
 
 ### dashboard
 App MIT baseada em Nuxt, destinada a lidar com fluxos de pagamento por meio de uma interface embutida no app Flutter /wallet.
@@ -58,7 +58,7 @@ Repositório de código fechado para integrações de marketplace multiusuário 
 
 ## Casos de uso pretendidos
 
-A P2Payments é voltada para casos em que stacks de pagamento padrão são limitados demais, frágeis demais ou dependentes demais de um único provedor.
+A P2Pagos é voltada para casos em que stacks de pagamento padrão são limitados demais, frágeis demais ou dependentes demais de um único provedor.
 
 Os casos de uso típicos incluem:
 
@@ -75,7 +75,7 @@ Ela não deve ser apresentada como uma solução universal para qualquer merchan
 
 ## Status
 
-A P2Payments ainda está evoluindo. Alguns componentes existem como integrações funcionais, outros são parciais, experimentais ou ainda estão sendo montados dentro do orquestrador principal.
+A P2Pagos ainda está evoluindo. Alguns componentes existem como integrações funcionais, outros são parciais, experimentais ou ainda estão sendo montados dentro do orquestrador principal.
 
 Os repositórios devem ser lidos como trabalho ativo de infraestrutura, não como uma suíte de produtos finalizada.
 
@@ -83,6 +83,8 @@ Os repositórios devem ser lidos como trabalho ativo de infraestrutura, não com
 
 ## Comunidade
 
-- [Discussões do GitHub](https://github.com/orgs/P2Payments/discussions)
-- [Grupo no Telegram](https://t.me/P2PaymentsCom)
-  
+- [Discussões do GitHub](https://github.com/orgs/P2Pagos/discussions)
+- [Grupo no Telegram](https://t.me/P2Pagos)
+
+### Projeto inspirado no [**BitPagos**](https://web.archive.org/web/20141225131358/https://www.bitpagos.com/es/)
+
