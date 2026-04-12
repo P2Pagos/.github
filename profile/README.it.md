@@ -26,8 +26,7 @@ Se un rail non effettua già settlement in un asset supportato dal fork di Aqua 
 ```mermaid
 flowchart LR
 
-  subgraph walletWrap[" "]
-    wallet["/wallet"]
+  subgraph walletWrap["/wallet"]
     walletPlatform["(iOS e Android)"]
     seedMono["frase seed"]
     seedMarket["frase seed"]
@@ -68,7 +67,6 @@ flowchart LR
   style builtTeam fill:transparent,stroke:transparent,color:#999
   style walletPlatform fill:transparent,stroke:transparent,color:#999
 
-  click wallet "https://github.com/P2Pagos/wallet" "_blank"
   click otherWallet "https://github.com/P2Pagos/wallet" "_blank"
   click mono "https://github.com/P2Pagos/mono" "_blank"
 ```
