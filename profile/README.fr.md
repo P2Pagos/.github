@@ -81,9 +81,12 @@ Les dépôts doivent être lus comme un travail actif d’infrastructure, et non
 
 ---
 
-## Communauté
+## Communauté et contact
 
 - [Discussions GitHub](https://github.com/orgs/P2Pagos/discussions)
 - [Groupe Telegram](https://t.me/P2Pagos)
+- [p2pagos@p2pay.to](mailto:p2pagos@p2pay.to) avec PGP facultatif [A1786A2CF6C5B65FDB4519F17E425F745D4EE866](https://pgp.p2pay.to)
+
+---
 
 ### Projet inspiré par [**BitPagos**](https://web.archive.org/web/20141225131358/https://www.bitpagos.com/es/)
