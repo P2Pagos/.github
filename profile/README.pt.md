@@ -21,6 +21,59 @@ Se um rail ainda não liquidar em um ativo suportado pelo fork da Aqua Wallet, a
 
 ---
 
+## Arquitetura
+```mermaid
+flowchart LR
+
+  subgraph walletWrap[" "]
+    wallet["/wallet"]
+    walletPlatform["(iOS e Android)"]
+    seedMono["frase-semente"]
+    seedMarket["frase-semente"]
+    seedTeam["frase-semente / xpub"]
+  end
+
+  mono["/mono"]
+  monoBtcpay["Servidor BTCPay"]
+
+  subgraph docker["Docker"]
+    marketplace["/marketplace"]
+    marketBtcpay["Servidor BTCPay"]
+  end
+
+  team["/team"]
+  otherWallet["/wallet"]
+
+  builtMarket["baseado em"]
+  builtTeam["baseado em"]
+
+  seedMono --> mono
+  seedMarket --> marketplace
+  seedTeam -.-> team
+
+  otherWallet --> marketplace
+
+  mono --> monoBtcpay
+  marketplace --> marketBtcpay
+
+  marketplace -.-> builtMarket
+  builtMarket -.-> mono
+
+  team -.-> builtTeam
+  builtTeam -.-> mono
+
+  style team stroke-dasharray: 6 6
+  style builtMarket fill:transparent,stroke:transparent,color:#999
+  style builtTeam fill:transparent,stroke:transparent,color:#999
+  style walletPlatform fill:transparent,stroke:transparent,color:#999
+
+  click wallet "https://github.com/P2Pagos/wallet" "_blank"
+  click otherWallet "https://github.com/P2Pagos/wallet" "_blank"
+  click mono "https://github.com/P2Pagos/mono" "_blank"
+```
+
+---
+
 ## Integrações de rails
 
 | Rail | Status | Moeda | Métodos de pagamento | Liquidação | Taxa | Verificação |
