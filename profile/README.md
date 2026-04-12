@@ -23,6 +23,59 @@ If a rail does not already settle into an asset supported by the Aqua wallet for
 
 ---
 
+## Architecture
+
+```mermaid
+flowchart LR
+
+  subgraph walletWrap[" "]
+    wallet["/wallet"]
+    walletPlatform["(iOS & Android)"]
+    seedMono["seed phrase"]
+    seedMarket["seed phrase"]
+    seedTeam["seed phrase / xpub"]
+  end
+
+  mono["/mono"]
+  monoBtcpay["BTCPay Server"]
+
+  subgraph docker["Docker"]
+    marketplace["/marketplace"]
+    marketBtcpay["BTCPay Server"]
+  end
+
+  team["/team"]
+  otherWallet["/wallet"]
+
+  builtMarket["built on"]
+  builtTeam["built on"]
+
+  seedMono --> mono
+  seedMarket --> marketplace
+  seedTeam -.-> team
+
+  otherWallet --> marketplace
+
+  mono --> monoBtcpay
+  marketplace --> marketBtcpay
+
+  marketplace -.-> builtMarket
+  builtMarket -.-> mono
+
+  team -.-> builtTeam
+  builtTeam -.-> mono
+
+  style team stroke-dasharray: 6 6
+  style builtMarket fill:transparent,stroke:transparent,color:#999
+  style builtTeam fill:transparent,stroke:transparent,color:#999
+  style walletPlatform fill:transparent,stroke:transparent,color:#999
+
+  click wallet "https://github.com/P2Pagos/wallet" "_blank"
+  click otherWallet "https://github.com/P2Pagos/wallet" "_blank"
+  click mono "https://github.com/P2Pagos/mono" "_blank"
+```
+---
+
 ## Rail Integrations
 
 | Rail | Status | Currency | Payment Methods | Settlement | Fee | Verification |  
