@@ -21,7 +21,6 @@ Si un riel no liquida ya en un activo soportado por el fork de Aqua Wallet, P2Pa
 
 ---
 
-
 ```mermaid
 flowchart LR
 
