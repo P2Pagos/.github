@@ -40,25 +40,27 @@ Si un inbound rail no liquida ya en un activo soportado por el fork de Aqua Wall
 ```mermaid
 flowchart LR
 
-subgraph walletWrap["/wallet"]
-  walletPlatform["(iOS & Android)"]
-  seedMono["seed phrase"]
-  seedMarket["seed phrase"]
-  seedTeam["seed phrase / xpub"]
+subgraph walletWrap["/wallet (MIT)"]
+  walletPlatform["fork de Aqua (MIT) / (iOS & Android)"]
+  seedMono["frase semilla"]
+  seedMarket["frase semilla"]
+  seedTeam["frase semilla / xpub"]
 end
 
-mono["/mono"]
-monoBtcpay["BTCPay Server"]
+mono["/mono (MIT)"]
+monoBtcpay["BTCPay Server (MIT)"]
 
 subgraph docker["Docker"]
-  marketplace["/marketplace"]
-  marketBtcpay["BTCPay Server"]
+  marketplace["/marketplace (closed-source)"]
+  marketBtcpay["BTCPay Server (MIT)"]
 end
 
 team["/team"]
-otherWallet["/wallet"]
-builtMarket["built on"]
-builtTeam["built on"]
+otherWallet["/wallet (MIT)"]
+builtMarket["basado en"]
+builtTeam["basado en"]
+
+dashboard["/dashboard (MIT)"]
 
 seedMono --> mono
 seedMarket --> marketplace
@@ -67,6 +69,7 @@ otherWallet --> marketplace
 
 mono --> monoBtcpay
 marketplace --> marketBtcpay
+dashboard --> marketplace
 
 marketplace -.-> builtMarket
 builtMarket -.-> mono
