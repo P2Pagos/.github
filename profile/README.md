@@ -178,6 +178,20 @@ Closed-source Paraguay-specific module for accounting, reporting, and local comp
 
 ---
 
+## Early Use Cases Around Us
+
+Some of the clearest use cases are already emerging from our immediate network.
+
+- A **construction company** opportunity is already active through Marta, with real demand for receiving higher-value crypto payments in Paraguay.
+- A **content creator with an international audience in the health and wellness space** wants to open an agency for local businesses that want to rank better on Google Maps, appear in featured snippets, and manage DNS-related work. In that flow, P2Pagos can be the payment method, while the businesses paying him may be located in Paraguay, broader LATAM, or even the Philippines.
+- During a recent weekend in the **Chaco**, another close Italian contact described two business lines that fit our payment approach very well:
+  - assistance with **Paraguayan paperwork** such as cédula, residency, driver’s license, certificado de vida y residencia, and RUC opening
+  - a **low-cost hostel for backpackers and digital nomads** booking from abroad without local Paraguayan bank accounts
+
+Some of these businesses may be considered high-risk by mainstream payment processors even when they are not inherently problematic. Our payment method fits them well precisely because it is settlement-first, cross-border, and less dependent on local banking constraints.
+
+---
+
 ## Use Cases for Multi-Rail Payments
 
 P2Pagos is aimed at cases where standard payment stacks are too limited, too fragile, or too dependent on a single provider.
