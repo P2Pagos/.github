@@ -20,7 +20,7 @@ P2Pagos is designed around a few practical choices:
 - **Self-custodial by default**
 - **Agnostic in practice** — the usable rail and settlements for best conversion path matter more than ideology
 - **Multi-rail** — different markets need different ways to pay
-- **Modular** — rails and flows can be enabled or left out depending on the use case
+- **Modular** — rails, flows, and services can be enabled or left out depending on the use case
 - **Open source** — the public components remain MIT licensed, with long-term maintenance and development supported by revenue from the paid closed-source offering
 
 If a rail does not already settle into an asset supported by the Aqua wallet fork, P2Pagos aims to convert further into the supported asset that is cheapest and most functional for that case.
@@ -81,7 +81,7 @@ click mono "https://github.com/P2Pagos/mono" "_blank"
 
 | Rail | Status | Currency | Payment Methods | Settlement | Fee | Verification |
 |------|--------|----------|-----------------|------------|-----|--------------|
-| BTC | Implemented | SATS | On-chain & Lightning | None | Bitcoin On-chain | None | None |
+| BTC | Implemented | SATS | On-chain & Lightning | Bitcoin On-chain | None | None |
 | USDT | Implemented | USD | Liquid & Polygon | USDT Liquid & Polygon | None | None |
 | Peach *(p2p-api-integration)* | ongoing | Global | Any | Bitcoin On-chain | High | None |
 | RoboSats *(p2p-api-integration)* | ongoing | Global | Any | Bitcoin On-chain | High | None |
@@ -92,7 +92,18 @@ click mono "https://github.com/P2Pagos/mono" "_blank"
 | Kamipay *(cex-api-integration)* | planned | BRL | Pix | USDT Polygon | Low | None |
 | MtPelerin *(cex-api-integration)* | planned | EUR & CHF | SEPA | Bitcoin On-chain OR USDT Polygon | Low | Standard |
 | Bitzed *(cex-api-integration)* | planned | ZMW | Mobile | Bitcoin On-chain | Low | None |
-| Matbea *(cex+p2p-api-integration)** | planned | RUB | Yandex Pay, Sberbank, Tinkoff, YooMoney, SBP-P2P, Mobile phone | Bitcoin On-chain | Low | None |
+| Matbea *(cex+p2p-api-integration)* | planned | RUB | Yandex Pay, Sberbank, Tinkoff, YooMoney, SBP P2P, Mobile phone | Bitcoin On-chain | Low | None |
+
+---
+
+## Service Modules
+
+| Service | Status | Scope | Purpose | Default |
+|---------|--------|-------|---------|---------|
+| ip-detection | testing | global | IP geolocation and currency detection | optional by default |
+| tor | testing | global | Tor reverse proxy for onion and Tor-based integrations | optional by default |
+| market | testing | global | market aggregation and external offers | optional by default |
+| invoicing-reporting-py | in planning | Paraguay | invoicing and reporting | optional by default |
 
 ---
 
@@ -102,7 +113,7 @@ click mono "https://github.com/P2Pagos/mono" "_blank"
 
 Single user orchestrator MIT repository.
 
-It assembles rails, flows, and supporting services in one workspace. Active development is currently centered here.
+It assembles rails, flows, and supporting services into one workspace. Active development is currently centered here.
 
 ### [wallet](https://github.com/P2Pagos/wallet)
 
@@ -146,6 +157,12 @@ Some components exist as working integrations, others are partial, experimental,
 ## Community & Contact
 
 - [GitHub Discussions](https://github.com/orgs/P2Pagos/discussions)
+- [Telegram Group](https://t.me/P2Pagos)
+- [p2pagos@p2pay.to](mailto:p2pagos@p2pay.to) with optional PGP [A1786A2CF6C5B65FDB4519F17E425F745D4EE866](https://pgp.p2pay.to)
+
+---
+
+### Project inspired by [**BitPagos**](https://web.archive.org/web/20141225131358/https://www.bitpagos.com/es/)
 - [Telegram Group](https://t.me/P2Pagos)
 - [p2pagos@p2pay.to](mailto:p2pagos@p2pay.to) with optional PGP [A1786A2CF6C5B65FDB4519F17E425F745D4EE866](https://pgp.p2pay.to)
 
