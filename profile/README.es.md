@@ -239,4 +239,4 @@ Algunos componentes existen como integraciones funcionales, otros son parciales,
 
 ---
 
-### Proyecto inspirado por [**BitPagos**](https://web.archive.org/web/20141225131358/https://www.bitpagos.com/es/) en 2014
+### Proyecto inspirado en [**BitPagos**](https://web.archive.org/web/20141225131358/https://www.bitpagos.com/es/) en 2014, ahora priorizado como respuesta open-source al reciente lanzamiento de un [Stripe Payments BTCPay Plugin](https://plugin-builder.btcpayserver.org/public/plugins/stripe-payments) con KYC obligatorio, disponibilidad limitada por país y liquidación en fiat.
