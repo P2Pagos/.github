@@ -1,21 +1,18 @@
-[Español](https://github.com/P2Pagos/.github/blob/main/profile/README.es.md) | [Português](https://github.com/P2Pagos/.github/blob/main/profile/README.pt.md) | [Русский](https://github.com/P2Pagos/.github/blob/main/profile/README.ru.md) | [Français](https://github.com/P2Pagos/.github/blob/main/profile/README.fr.md) | [Italiano](https://github.com/P2Pagos/.github/blob/main/profile/README.it.md)
-
-> Translations may be outdated.  
-> Las traducciones pueden estar desactualizadas.
+[Español](https://github.com/P2Pagos/.github/blob/main/profile/README.es.md) | [Português](https://github.com/P2Pagos/.github/blob/main/profile/README.pt.md)
 
 # P2Pagos — Open-Source Multi-Rail Payment Infrastructure
 
 Open-source, modular, and agnostic-by-design payment infrastructure for businesses and users that need practical multi-rail payment flows, self-custodial settlement, and more flexible cross-border money movement.
 
-P2Pagos is built around **inbound rails**, **multi-rail offramp** and self-custodial settlement. It is designed to make payment architecture more practical across markets, rails, currencies, and jurisdictions, especially where traditional payment access is fragmented, limited, or overly dependent on a single provider.
+P2Pagos is built around **inbound rails**, **multi-rail offramps**, and self-custodial settlement. It is designed to make payment architecture more practical across markets, rails, currencies, and jurisdictions, especially where traditional payment access is fragmented, limited, or overly dependent on a single provider.
 
 P2Pagos uses [BTCPay Server](https://github.com/btcpayserver/btcpayserver) as the backend and an [Aqua Wallet](https://github.com/AquaWallet/aqua-wallet) fork as the default settlement wallet.
 
 [BTCPay Server](https://github.com/btcpayserver/btcpayserver) was chosen because it is a battle-tested, widely adopted, and community-maintained API and GUI backend with some built-in rails. We also actively contribute to its [core and plugin ecosystem](https://github.com/search?q=involves%3Alearntheropes+%28org%3Abtcpayserver+OR+org%3Abtcpayserver-tether+OR+org%3Amempool%29&type=issues).
 
-[Aqua Wallet](https://github.com/AquaWallet/aqua-wallet) was chosen because it already supports settlement in **btc on-chain, multiple stablecoins (USD and BRL for now)** by default, and can be integrated from BTCPay Server through the Shamrock protocol with a QR-based connection flow.
+[Aqua Wallet](https://github.com/AquaWallet/aqua-wallet) was chosen because it already supports settlement in **BTC on-chain and multiple stablecoins (USD and BRL for now)** by default, and can be integrated from BTCPay Server through the Shamrock protocol with a QR-based connection flow.
 
-Where direct local cashout is not yet native, P2Pagos provides practical guidance around compatible external wallets, cards, and off-ramp tools to improve real usability in Latin America and other supported regions. For instance, across all currently planned settlement chains, we already consider wallets and services such as [Belo]([https://belo.app](https://simple.belo.app/app/referral?referralCode=GIOVANNIL)), [Revolut](https://revolut.com/referral/?referral-code=giovanni_learntheropes), and [Offramp](https://app.offramp.xyz/login?referralCode=njmlxf), including card and Google Pay / Apple Pay compatible paths, while more privacy-friendly card and Google Pay options may later be added through planned FixedFloat API work or collaboration with the issuer.
+Where direct local cashout is not yet native, P2Pagos provides practical guidance around compatible external wallets, cards, and off-ramp tools to improve real usability in Latin America and other supported regions. For instance, across all currently planned settlement chains, we already consider wallets and services such as [Belo](https://simple.belo.app/app/referral?referralCode=GIOVANNIL), [Revolut](https://revolut.com/referral/?referral-code=giovanni_learntheropes), and [Offramp](https://app.offramp.xyz/login?referralCode=njmlxf), including card and Google Pay / Apple Pay compatible paths, while more privacy-friendly card and Google Pay options may later be added through planned FixedFloat API work or collaboration with the issuer.
 
 ---
 
@@ -29,7 +26,7 @@ P2Pagos is designed around a few practical choices:
 - **Modular** — inbound rails, offramps, flows, and services can be enabled or left out depending on the use case
 - **Open source** — the public components remain MIT licensed, with long-term maintenance and development supported by revenue from the paid closed-source offering
 
-If an inbound rail does not already settle into an asset supported by the Aqua wallet fork, P2Pagos aims to convert further into the supported asset that is cheapest and most functional for that case.
+If an inbound rail does not already settle into an asset supported by the Aqua wallet fork, P2Pagos aims to convert it further into the supported asset that is cheapest and most functional for that case.
 
 ---
 
@@ -49,11 +46,8 @@ mono["/mono (MIT)"]
 monoBtcpay["BTCPay Server (MIT)"]
 
 subgraph docker["Docker"]
-  marketplace["/marketplace (closed-source)"]
+  marketplace["/marketplace<br/>(closed-source)<br/><br/>Rails:<br/>/banxa (MIT)<br/><br/>Services:<br/>/kyc (MIT)<br/>/compliance (MIT)"]
   marketBtcpay["BTCPay Server (MIT)"]
-  bridge["/bridge"]
-  kyc["/kyc"]
-  pyCompliance["/py-compliance"]
 end
 
 team["/team"]
@@ -70,17 +64,13 @@ otherWallet --> marketplace
 
 mono --> monoBtcpay
 marketplace --> marketBtcpay
-dashboard --> marketplace
+dashboard --> otherWallet
 
 marketplace -.-> builtMarket
 builtMarket -.-> mono
 
 team -.-> builtTeam
 builtTeam -.-> mono
-
-marketplace --> bridge
-marketplace --> kyc
-marketplace --> pyCompliance
 
 style team stroke-dasharray: 6 6
 style builtMarket fill:transparent,stroke:transparent,color:#999
@@ -89,16 +79,12 @@ style walletPlatform fill:transparent,stroke:transparent,color:#999
 
 click otherWallet "https://github.com/P2Pagos/wallet" "_blank"
 click mono "https://github.com/P2Pagos/mono" "_blank"
-click bridge "https://github.com/P2Pagos/bridge" "_blank"
-click kyc "https://github.com/P2Pagos/kyc" "_blank"
-click pyCompliance "https://github.com/P2Pagos/py-compliance" "_blank"
 ```
 
-> Closed-source repos are only available to team members and not to external collaborators. Some modules may be open-sourced at a later stage.
-
-> These integrations are closed source because they require enhanced verification for the marketplace admin and for users involved in high-value transactions. They also finance all open-source development.
-
-> For these integrations, Blockchange.expert can advise a structured plan either under a Paraguay EAS or a US LLC. This consultancy service is ready to deploy today by booking an integration call at https://www.blockchange.expert/en/#call or by email asynchronously.
+> Closed-source repo code is only available to team members and not to external collaborators.
+> Some modules that only work with the closed-source repo may be open-sourced at a later stage for integration into third-party external and unrelated projects.
+> Because it is a closed-source repo, it requires enhanced verification for the marketplace admin and for users involved in high-value transactions.
+> It is also supposed to generate enough income to maintain all the MIT repos long-term.
 
 ---
 
@@ -126,10 +112,10 @@ click pyCompliance "https://github.com/P2Pagos/py-compliance" "_blank"
 | Cashout | Status | Currency | Payment Methods | Verification |
 |---------|--------|----------|-----------------|--------------|
 | dLocal | early stage | LATAM / Africa / Asia & Middle East | bank transfer | standard |
-| Ueno Bank | post [moonshot.md](moonshot.md) | PYG / USD | bank transfer / card-popup | standard |
-| Freedomia Card | planned | USD limited settlements | card / Google Pay | none |
+| Ueno Bank | post [moonshot.md](moonshot.md) | PYG / USD | bank transfer / card-popup | unknown, but not less than standard |
+| Freedomia Card | under discussion with the provider | USD limited settlements | card / Google Pay | none |
 
-Referral code for two months [Freedomia](https://www.freedomia.io/a/p2pagos) free plan.
+Referral code for two months of the [Freedomia](https://www.freedomia.io/a/p2pagos) free plan.
 
 ---
 
@@ -141,40 +127,43 @@ Referral code for two months [Freedomia](https://www.freedomia.io/a/p2pagos) fre
 | [tor](https://github.com/P2Pagos/mono/tree/main/services/tor) | testing | global | Tor reverse proxy for onion and Tor-based integrations | enabled if consumed by an enabled rail |
 | [cors](https://github.com/P2Pagos/mono/tree/main/services/cors) | testing | global | CORS reverse proxy for target APIs | enabled if consumed by an enabled rail |
 | [market](https://github.com/P2Pagos/mono/tree/main/services/market) | testing | global | market aggregation and external offers | enabled if consumed by an enabled rail |
+| invoice | planned | multiple countries, many of them in LATAM | Programmatic electronic invoice generation upon payment settlement based on the [Invopop](https://www.invopop.com/) solution, with us releasing the Paraguayan SIFEN integration using the available [TIPS SA](https://github.com/TIPS-SA) modules | disabled by default |
 
 ---
 
 ## Active and Planned Repositories
 
-### [mono](https://github.com/P2Pagos/mono)
+### [/mono](https://github.com/P2Pagos/mono)
 
-Single user orchestrator MIT repository.
+Single-user orchestrator MIT repository.
 
 It assembles inbound rails, settlement flows, and supporting services into one workspace. Active development is currently centered here.
 
-### [wallet](https://github.com/P2Pagos/wallet)
+### [/wallet](https://github.com/P2Pagos/wallet)
 
-A MIT fork of the Aqua Flutter Wallet for P2Pagos, with an embedded Nuxt app to manage /mono settings and connect to BTCPay via the Shamrock protocol.
+An MIT fork of the Aqua Flutter Wallet for P2Pagos, with an embedded Nuxt app to manage /mono settings and connect to BTCPay via the Shamrock protocol.
 
-### dashboard
+### /dashboard
 
-Nuxt-based MIT app, intended to handle payment flows through an embedded interface in the /wallet Flutter app.
+Nuxt-based MIT app intended to handle payment flows through an embedded interface in the /wallet Flutter app.
 
-### marketplace
+### /marketplace
 
 Closed-source repository for multi-user marketplace integrations of the /mono repo.
 
-### bridge
+It is designed to include multi-user management by the marketplace admin, while funds always remain under the control of the marketplace merchant user.
 
-Closed-source integration module for Bridge.xyz-based fiat reception and payout orchestration within marketplace flows.
+It will include some additional modules currently under evaluation:
 
-### kyc
+#### Rails
 
-Closed-source integration module for enhanced verification, admin-level checks, and user onboarding flows tied to high-value marketplace transactions.
+- [Banxa virtual accounts](https://banxa.com/features/fiat/virtual-accounts/): ACH, SEPA, Faster Payments, and PayID rails, all to be confirmed due to poor documentation, with merchant-unique details.
 
-### py-compliance
+#### Services
 
-Closed-source Paraguay-specific module for accounting, reporting, and local compliance-oriented marketplace operations.
+- Merchant KYC verification.
+- Financial operations reporting for Paraguayan clients as required by the Resolución DNIT 47/2026 compliance rules.
+- Financial operations reporting for EU clients as required by the MiCA regulation.
 
 ---
 
