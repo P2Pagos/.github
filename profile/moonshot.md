@@ -26,12 +26,12 @@ Possible collaboration paths include:
 
 Application submitted.
 
-![Moonshot application submission]() TODO I will upload the file soon
+![Moonshot application submission](https://raw.githubusercontent.com/P2Pagos/.github/refs/heads/main/profile/moonshot-submitted-form.md) I will upload the file soon
 
 ## Presentation Video
 
 We also attached a short project presentation video.
 
-[Watch the presentation video]() TODO I will upload the faces censored video of the project introduction to Ueno soon.
+[Watch the presentation video](VsKt3lpcVWY) TODO I will upload the faces censored video of the project introduction to Ueno soon.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="Moonshot application video" frameborder="0" allowfullscreen></iframe>
