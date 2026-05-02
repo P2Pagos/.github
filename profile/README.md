@@ -88,7 +88,7 @@ click mono "https://github.com/P2Pagos/mono" "_blank"
 
 ---
 
-## [Inbound Multi-Rails](#inbound-multi-rails)
+## Inbound Multi-Rails
 | Rail | Status | Currency | Payment Methods | Settlement | Fee | Verification |
 |------|--------|----------|-----------------|------------|-----|--------------|
 | BTC | Implemented | SATS | On-chain & Lightning | Bitcoin On-chain | None | Total |
