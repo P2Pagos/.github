@@ -101,7 +101,7 @@ click mono "https://github.com/P2Pagos/mono" "_blank"
 | Paygate *(cex-api-integration)* | planned | Global | Credit/Debit Cards | USDT Polygon | Medium | TBD |
 | DePix *(cex-api-integration)* | planned | BRL | Pix | BRL on Liquid | Low | Total |
 | Kamipay *(cex-api-integration)* | planned | BRL | Pix | USDT Polygon | Low | None |
-| MtPelerin *(cex-api-integration)* | planned | EUR & CHF | SEPA | Bitcoin On-chain OR USDT Polygon | Low | Partial (with RUC structure) |
+| MtPelerin *(cex-api-integration)* | planned | EUR & CHF | SEPA | Bitcoin On-chain OR USDT Polygon | Low | Yes (with RUC structure) |
 | Bitzed *(cex-api-integration)* | planned | ZMW | Mobile | Bitcoin On-chain | Low | Total |
 | Matbea *(cex+p2p-api-integration)* | planned | RUB | Yandex Pay, Sberbank, Tinkoff, YooMoney, SBP P2P, Mobile phone | Bitcoin On-chain | Low | Total |
 ---
