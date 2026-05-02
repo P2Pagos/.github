@@ -104,7 +104,7 @@ click mono "https://github.com/P2Pagos/mono" "_blank"
 | MtPelerin *(cex-api-integration)* | planned | EUR & CHF | SEPA | Bitcoin On-chain OR USDT Polygon | Low | Standard |
 | Bitzed *(cex-api-integration)* | planned | ZMW | Mobile | Bitcoin On-chain | Low | None |
 | Matbea *(cex+p2p-api-integration)* | planned | RUB | Yandex Pay, Sberbank, Tinkoff, YooMoney, SBP P2P, Mobile phone | Bitcoin On-chain | Low | None |
-| <a id="moonpay-ach-usd"></a>MoonPay *(cex-api-integration)* | designing | USD | ACH | TBD | TBD | Standard |
+| [MoonPay ACH USD](#moonpay-ach-usd) *(cex-api-integration)* | designing | USD | ACH | TBD | TBD | Standard |
 ---
 
 ## Multi-Rail Offramp
