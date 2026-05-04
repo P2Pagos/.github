@@ -124,7 +124,7 @@ Código de indicação para dois meses do plano gratuito da [Freedomia](https://
 
 | Serviço | Status | Escopo | Propósito | Padrão |
 |---------|--------|--------|-----------|--------|
-| [ip-detection](https://github.com/P2Pagos/mono/tree/main/services/ip-detection) | em testes | global | geolocalização por IP e detecção de moeda | habilitado por padrão para detecção de moeda com base na localização por país da Cloudflare; notas detalhadas serão abordadas em um post separado sobre uma vulnerabilidade da Proton VPN ignorada pela equipe de segurança; ipinfo exige uma API key gratuita vitalícia |
+| [ip](https://github.com/P2Pagos/mono/tree/main/services/ip) | em testes | global | geolocalização por IP e detecção de moeda | habilitado por padrão para detecção de moeda com base na localização por país da Cloudflare; notas detalhadas serão abordadas em um post separado sobre uma vulnerabilidade da Proton VPN ignorada pela equipe de segurança; ipinfo exige uma API key gratuita vitalícia |
 | [tor](https://github.com/P2Pagos/mono/tree/main/services/tor) | em testes | global | reverse proxy Tor para integrações onion e baseadas em Tor | habilitado se consumido por um rail habilitado |
 | [cors](https://github.com/P2Pagos/mono/tree/main/services/cors) | em testes | global | reverse proxy CORS para APIs de destino | habilitado se consumido por um rail habilitado |
 | [market](https://github.com/P2Pagos/mono/tree/main/services/market) | em testes | global | agregação de mercado e ofertas externas | habilitado se consumido por um rail habilitado |
