@@ -127,7 +127,7 @@ Referral code for two months of the [Freedomia](https://www.freedomia.io/a/p2pag
 | [tor](https://github.com/P2Pagos/mono/tree/main/services/tor) | testing | global | Tor reverse proxy for onion and Tor-based integrations | enabled if consumed by an enabled rail |
 | [cors](https://github.com/P2Pagos/mono/tree/main/services/cors) | testing | global | CORS reverse proxy for target APIs | enabled if consumed by an enabled rail |
 | [market](https://github.com/P2Pagos/mono/tree/main/services/market) | testing | global | market aggregation and external offers | enabled if consumed by an enabled rail |
-| invoice | planned | multiple countries, many of them in LATAM | Among them, the invoice module: open-source, programmatic electronic invoice generation triggered on payment settlement, built on the Invopop solution and extended with the Paraguayan SIFEN integration via TIPS SA modules, with multiple LATAM countries supported | disabled by default |
+| invoice | planned | multiple countries, many of them in LATAM | Programmatic electronic invoice generation upon payment settlement, based on the [Invopop](https://www.invopop.com/) solution, releasing the Paraguayan SIFEN integration using the available [TIPS SA](https://github.com/TIPS-SA) modules, with multiple LATAM countries supported | disabled by default |
 
 ---
 
