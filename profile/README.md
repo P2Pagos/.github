@@ -111,9 +111,8 @@ click mono "https://github.com/P2Pagos/mono" "_blank"
 
 | Cashout | Status | Currency | Payment Methods | Verification |
 |---------|--------|----------|-----------------|--------------|
-| dLocal | early stage | LATAM / Africa / Asia & Middle East | bank transfer | Standard |
-| Ueno Bank | post [moonshot.md](moonshot.md) | PYG / USD | bank transfer / card-popup | Enlached |
 | Freedomia Card | under discussion with the provider | USD limited settlements | card / Google Pay | None |
+| todo | ... | ... | ... | ... |
 
 Referral code for two months of the [Freedomia](https://www.freedomia.io/a/p2pagos) free plan.
 
