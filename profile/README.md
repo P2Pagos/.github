@@ -96,7 +96,6 @@ click mono "https://github.com/P2Pagos/mono" "_blank"
 | USDT | Implemented | USD | Liquid & Polygon | USDT Liquid & Polygon | None | None | Total |
 | [Peach](https://github.com/P2Pagos/mono/tree/main/rails/peach) *(p2p-api-integration)* | testing | Global | Any | Bitcoin On-chain | High | None | Total |
 | [RoboSats](https://github.com/P2Pagos/mono/tree/main/rails/robosats) *(p2p-api-integration)* | testing | Global | Any | Bitcoin On-chain | High | None | Total |
-| MoonPay ACH USD *(cex-api-integration)* | designing | USD | ACH | TBD | TBD | Standard | None |
 | Mostro *(p2p-api-integration)* | evaluating | Global | Any | Bitcoin On-chain | High | None | Total |
 | Guardarian *(cex-api-integration)* | planned | USD, EUR, GBP, CAD, AUD, JPY, TRY, PLN, SEK | Credit/Debit Cards & Google/Apple Pay | Bitcoin On-chain | Medium | None or Standard | Possible (with RUC structure) |
 | Paygate *(cex-api-integration)* | planned | Global | Credit/Debit Cards | USDT Polygon | Medium | none | Total |
@@ -105,6 +104,7 @@ click mono "https://github.com/P2Pagos/mono" "_blank"
 | MtPelerin *(cex-api-integration)* | planned | EUR & CHF | SEPA | Bitcoin On-chain OR USDT Polygon | Low | Enlached | Possible (with RUC structure) |
 | Bitzed *(cex-api-integration)* | planned | ZMW | Mobile | Bitcoin On-chain | Low | None | Total |
 | Matbea *(cex+p2p-api-integration)* | planned | RUB | Yandex Pay, Sberbank, Tinkoff, YooMoney, SBP P2P, Mobile phone | Bitcoin On-chain | Low | None | Total |
+| MoonPay ACH USD *(cex-api-integration)* | designing | USD | ACH | TBD | TBD | Standard | None |
 ---
 
 ## Multi-Rail Offramp
